@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral*/
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color:var(--Pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  background:url(./images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  width: 350px;
+  height: 530px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 10px hsla(245, 75%, 52%, 0.1);
+}
+
+.contenedor{
+  padding: 30px;
+}
+
+.headerImg{
+  border-radius: 20px 20px 0 0;
+}
+
+.titulo{
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.descripcion, 
+.precio,
+.cancel{
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+
+.plan{
+  display:flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--Pale-blue);
+  border-radius: 8px;
+  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.planAnual{
+  font-size: 16px;
+  width: 100px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.costo{
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+.musicIcon{
+  margin-left: 10px;
+  width: 35px;
+}
+
+.cambiar{
+  font-weight: 700;
+  margin-right: 20px;
+  color: var(--Dark-blue);
+}
+
+.cambiar:hover{
+  text-decoration: none;
+  color: var(--Bright-blue);
+}
+
+.botones{
+  display: flex;
+  flex-direction: column;
+}
+
+.proceder{
+  border-radius: 8px;
+  background-color: var(--Dark-blue);
+  margin-bottom: 20px;
+  border: none;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 10px hsla(245, 75%, 52%, 0.2);
+}
+
+.proceder:hover{
+  background-color: var(--Bright-blue);
+}
+
+.cancel{
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  cursor:pointer;
+  margin:0 auto;
+}
+
+.cancel:hover{
+  color:var(--Dark-blue);
+}
+
+@media(max-width:700px) {
+  body{
+    background:url(./images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
