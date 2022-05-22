@@ -7,12 +7,30 @@ import musicIcon from "./images/icon-music.svg"
 function App() {
   return (
     <div className="App">
+      <div className="attribution">
+            Challenge by{" "}
+            <a
+              rel="noreferrer"
+              href="https://www.frontendmentor.io/profile/speedbuild98"
+              target="_blank"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by{" "}
+            <a rel="noreferrer" href="https://devgallardo.netlify.app/">
+              GALLARDO
+            </a>
+            .
+          </div>
       <main>
         <img className="headerImg" src={headerImg} alt="header img" />
         <div className="contenedor">
           <h1 className="titulo">Order Summary</h1>
           <p className="descripcion">
-            You can now listen to millions of<br/>songs, audiobooks, and podcasts on<br/>
+            You can now listen to millions of
+            <br />
+            songs, audiobooks, and podcasts on
+            <br />
             any device anywhere you like!
           </p>
           <div className="plan">

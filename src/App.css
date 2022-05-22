@@ -17,7 +17,7 @@
 }
 
 body{
-  background-color:var(--Pale-blue);
+  background-color:var(--Very-pale-blue);
   font-family: "Red Hat Display", sans-serif;
   background:url(./images/pattern-background-desktop.svg);
   background-size: cover;
@@ -140,4 +140,29 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+
+.attribution{
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  height: 20px;
+  opacity: 30%;
+  z-index: 100;
+  font-size: 1rem;
+}
+
+.attribution:hover{
+  opacity: 100%;
+}
+
+.attribution a{
+  text-decoration: none;
+  color: #FC7614;
+}
+
+.attribution a:hover{
+  text-decoration: underline;
+  color: blue;
+  opacity: 100%;
 }
